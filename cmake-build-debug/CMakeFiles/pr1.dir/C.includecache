@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/ClionProj/cw1Sem/main.c
+main.h
+D:/ClionProj/cw1Sem/main.h
+stdio.h
+-
+
+D:/ClionProj/cw1Sem/main.h
+text.h
+D:/ClionProj/cw1Sem/text.h
+
+D:/ClionProj/cw1Sem/text.c
+text.h
+D:/ClionProj/cw1Sem/text.h
+
+D:/ClionProj/cw1Sem/text.h
+wchar.h
+-
+stdlib.h
+-
+

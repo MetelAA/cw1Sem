@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/artem/prog/C/CLionProj/pr1/main.c" "/home/artem/prog/C/CLionProj/pr1/cmake-build-debug/CMakeFiles/pr1.dir/main.c.o"
-  "/home/artem/prog/C/CLionProj/pr1/process_text.c" "/home/artem/prog/C/CLionProj/pr1/cmake-build-debug/CMakeFiles/pr1.dir/process_text.c.o"
-  "/home/artem/prog/C/CLionProj/pr1/show_text.c" "/home/artem/prog/C/CLionProj/pr1/cmake-build-debug/CMakeFiles/pr1.dir/show_text.c.o"
-  "/home/artem/prog/C/CLionProj/pr1/text.c" "/home/artem/prog/C/CLionProj/pr1/cmake-build-debug/CMakeFiles/pr1.dir/text.c.o"
+  "D:/ClionProj/cw1Sem/main.c" "D:/ClionProj/cw1Sem/cmake-build-debug/CMakeFiles/pr1.dir/main.c.obj"
+  "D:/ClionProj/cw1Sem/process_text.c" "D:/ClionProj/cw1Sem/cmake-build-debug/CMakeFiles/pr1.dir/process_text.c.obj"
+  "D:/ClionProj/cw1Sem/show_text.c" "D:/ClionProj/cw1Sem/cmake-build-debug/CMakeFiles/pr1.dir/show_text.c.obj"
+  "D:/ClionProj/cw1Sem/text.c" "D:/ClionProj/cw1Sem/cmake-build-debug/CMakeFiles/pr1.dir/text.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

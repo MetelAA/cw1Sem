@@ -2,18 +2,20 @@
 #define text_h_hF
 
 #include <wchar.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 struct sentence {
-    wchar_t *sent;
-    int num_word, max_word_len, simb_num, first_word_len, is_len_3;
+    wchar_t *words;
+    int max_word_len, simb_num, first_word_len, is_len_3;
 };
 
 struct text {
-    wchar_t **word;
+    struct sentence *sents;
     int num_sent;
 };
 
-void read_text(struct text *text);
+struct text* read_text();
 
 
 #endif

@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pr1.dir/main.c.o"
-  "CMakeFiles/pr1.dir/process_text.c.o"
-  "CMakeFiles/pr1.dir/show_text.c.o"
-  "CMakeFiles/pr1.dir/text.c.o"
-  "pr1"
+  "CMakeFiles/pr1.dir/main.c.obj"
+  "CMakeFiles/pr1.dir/process_text.c.obj"
+  "CMakeFiles/pr1.dir/show_text.c.obj"
+  "CMakeFiles/pr1.dir/text.c.obj"
+  "libpr1.dll.a"
+  "pr1.exe"
+  "pr1.exe.manifest"
   "pr1.pdb"
 )
 
