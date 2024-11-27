@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/pr1.dir/main.c.o CMakeFiles/pr1.dir/text.c.o CMakeFiles/pr1.dir/process_text.c.o CMakeFiles/pr1.dir/show_text.c.o  -o pr1 
