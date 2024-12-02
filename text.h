@@ -15,7 +15,7 @@ struct text {
     int num_sent;
 };
 
-struct text* read_text();
+struct text read_text();
 
 
 #endif

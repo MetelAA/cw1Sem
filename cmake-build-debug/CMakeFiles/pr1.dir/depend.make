@@ -3,12 +3,15 @@
 
 CMakeFiles/pr1.dir/main.c.obj: ../main.c
 CMakeFiles/pr1.dir/main.c.obj: ../main.h
+CMakeFiles/pr1.dir/main.c.obj: ../process_text.h
+CMakeFiles/pr1.dir/main.c.obj: ../show_text.h
 CMakeFiles/pr1.dir/main.c.obj: ../text.h
 
 CMakeFiles/pr1.dir/process_text.c.obj: ../process_text.c
 CMakeFiles/pr1.dir/process_text.c.obj: ../process_text.h
 CMakeFiles/pr1.dir/process_text.c.obj: ../text.h
 
+CMakeFiles/pr1.dir/show_text.c.obj: ../process_text.h
 CMakeFiles/pr1.dir/show_text.c.obj: ../show_text.c
 CMakeFiles/pr1.dir/show_text.c.obj: ../show_text.h
 CMakeFiles/pr1.dir/show_text.c.obj: ../text.h
