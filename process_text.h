@@ -9,7 +9,7 @@
 
 void reverse_sentence(struct text *text);
 void sort_by_first_word(struct text *text);
-void del_less_then_four_symbol_word_sent(struct text *test);
+void delete_less_then_four_symbol_word_sent(struct text *text);
 void get_metadata(struct text *text);
 
 #endif

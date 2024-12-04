@@ -20,13 +20,12 @@ int main() {
 
         break;
         case 3:
-
+            sort_by_first_word(&text);
+            show_text(&text);
         break;
         case 4:
-
-        break;
-        case 5:
-
+            delete_less_then_four_symbol_word_sent(&text);
+            show_text(&text);
         break;
         default:
             printf("Error: unknown option\n");
@@ -34,18 +33,18 @@ int main() {
     }
     return 0;
 }
-//1
+//4
+//Lorem ipsum. RepEaTs SEnT. dolor sit amet, consectetur.
+//adipiscing elit. tri sim snt.
+//Предложение на русском. Repeats Sent. gggggggggggggggg hiplet.
+//end sent
+
+//0
 //Lorem ipsum. RepEaTs SEnT. dolor sit amet, consectetur.
 //adipiscing elit.
 //Предложение на русском. Repeats Sent.
 //end sent
-//
 
-//Lorem ipsum. RepEaTs SEnT. dolor sit amet, consectetur.
-//adipiscing elit.
-//Предложение на русском. Repeats Sent.
-//end sent
+//4
+//Hyi. tri sim snt. Русский текст епта бля
 
-//1
-//Hyi. Русский текст епта бля
-//

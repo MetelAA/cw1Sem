@@ -16,6 +16,6 @@ struct text {
 };
 
 struct text read_text();
-
+void delete_sent(struct text *text, int sent_number);
 
 #endif

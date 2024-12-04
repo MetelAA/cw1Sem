@@ -13,7 +13,6 @@ int check_end(struct sentence *sent);
 
 void delete_repeat_sentences(struct text *text);
 
-void delete_sent(struct text *text, int sent_number);
 
 struct text read_text() {
     int text_max_size = STANDARD_TEXT_LEN;
@@ -92,16 +91,10 @@ void delete_repeat_sentences(struct text *text) {
     }
 }
 
-void delete_sent(struct text *text, int sent_number) {
-    free(text->sents[sent_number].words);
-    for (int i = sent_number; i < text->num_sent - 1; i++) {
-        text->sents[i].words = text->sents[i + 1].words;
-    }
-    text->num_sent--;
-}
 
 int check_end(struct sentence *sent) {
-    if (wcsstr(sent->words, L"\n\n") != NULL) {
+    wchar_t obr[] = L"\n\n";
+    if (wcsstr(sent->words, obr) != NULL) {
         wchar_t *a = wcspbrk(sent->words, L"\n\n");
 //        wprintf(L"LOG check_end - %ls\n", a);
         return 1;
@@ -139,6 +132,12 @@ int add_text_size(struct text *text, int text_max_size) {
     }
     text->sents = sents;
     return text_max_size;
+}
 
-
+void delete_sent(struct text *text, int sent_number) {
+    free(text->sents[sent_number].words);
+    for (int i = sent_number; i < text->num_sent - 1; i++) {
+        text->sents[i].words = text->sents[i + 1].words;
+    }
+    text->num_sent--;
 }
