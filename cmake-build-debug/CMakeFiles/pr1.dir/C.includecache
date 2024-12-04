@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+D:/ClionProj/cw1Sem/main.c
+main.h
+D:/ClionProj/cw1Sem/main.h
+stdio.h
+-
+
+D:/ClionProj/cw1Sem/main.h
+locale.h
+-
+text.h
+D:/ClionProj/cw1Sem/text.h
+show_text.h
+D:/ClionProj/cw1Sem/show_text.h
+process_text.h
+D:/ClionProj/cw1Sem/process_text.h
+
 D:/ClionProj/cw1Sem/process_text.h
 text.h
 D:/ClionProj/cw1Sem/text.h
@@ -16,15 +32,9 @@ wchar.h
 stdio.h
 -
 
-D:/ClionProj/cw1Sem/show_text.c
-show_text.h
-D:/ClionProj/cw1Sem/show_text.h
-
 D:/ClionProj/cw1Sem/show_text.h
 text.h
 D:/ClionProj/cw1Sem/text.h
-process_text.h
-D:/ClionProj/cw1Sem/process_text.h
 wchar.h
 -
 stdio.h

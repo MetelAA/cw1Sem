@@ -37,7 +37,6 @@ struct text read_text() {
             sent_size++;
 
             if (buffer == L'.' || (sent_size > 1 && sent->words[sent_size - 1] == L'\n' && sent->words[sent_size - 2] == L'\n')) { //вторая часть - коррекьтировка на то что последнее прелодение может оказаться без точки
-                sent_size++;
                 sent->words[sent_size] = L'\0';
                 break;
             }

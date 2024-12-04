@@ -7,7 +7,7 @@
 
 struct sentence {
     wchar_t *words;
-    int max_word_len, simb_num, first_word_len, is_len_3;
+    int max_word_len, simb_sum, first_word_len, is_len_3, words_sum;
 };
 
 struct text {

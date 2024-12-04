@@ -11,7 +11,6 @@ CMakeFiles/pr1.dir/process_text.c.obj: ../process_text.c
 CMakeFiles/pr1.dir/process_text.c.obj: ../process_text.h
 CMakeFiles/pr1.dir/process_text.c.obj: ../text.h
 
-CMakeFiles/pr1.dir/show_text.c.obj: ../process_text.h
 CMakeFiles/pr1.dir/show_text.c.obj: ../show_text.c
 CMakeFiles/pr1.dir/show_text.c.obj: ../show_text.h
 CMakeFiles/pr1.dir/show_text.c.obj: ../text.h

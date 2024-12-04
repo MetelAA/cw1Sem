@@ -1,7 +1,6 @@
 #ifndef show_text_hF
 #define show_text_hF
 #include "text.h"
-#include "process_text.h"
 #include <wchar.h>
 #include <stdio.h>
 
