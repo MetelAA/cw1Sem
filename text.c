@@ -46,6 +46,8 @@ struct text read_text() {
         text_size++;
         text.num_sent++;
         if (text_size > 1 && check_end(sent)) {
+            sent->words[sent_size-2] = L'.';
+            sent->words[sent_size-1] = L'\0';
             break;
         }
 

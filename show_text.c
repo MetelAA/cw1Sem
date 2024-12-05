@@ -12,8 +12,9 @@ void show_text(struct text *text){
 
 void show_metadata(struct text *text){
     for(int i = 0; i < text->num_sent; i++){
-        wprintf(L"%ls", text->sents[i].words);
-        printf("|| sentLen - %d\n", wcslen(text->sents[i].words));
-        wprintf(L"Kolichestvo slov - %d, Max len slova - %d, Kol-vo simb - %d\n", text->sents[i].words_sum, text->sents[i].max_word_len, text->sents[i].simb_sum);
+//        wprintf(L"%ls", text->sents[i].words);
+//        printf("|| sentLen - %d\n", wcslen(text->sents[i].words));
+//        wprintf(L"Kolichestvo slov - %d, Max len slova - %d, Kol-vo simb - %d\n", text->sents[i].words_sum, text->sents[i].max_word_len, text->sents[i].simb_sum);
+        wprintf(L"%d-%d-%d\n", text->sents[i].words_sum, text->sents[i].max_word_len, text->sents[i].simb_sum+1900);
     }
 }

@@ -4,7 +4,7 @@
 
 int main() {
     setlocale(LC_CTYPE, "ru");
-    //printf("Course work for option 5.8, created by Artem Metelskii.\n");
+    printf("Course work for option 5.8, created by Artem Metelskii.\n");
     int n = 0;
     scanf("%d", &n);
     struct text text = read_text();
@@ -17,7 +17,8 @@ int main() {
             show_metadata(&text);
         break;
         case 2:
-
+            reverse_sentence(&text);
+            show_text(&text);
         break;
         case 3:
             sort_by_first_word(&text);
@@ -26,6 +27,9 @@ int main() {
         case 4:
             delete_less_then_four_symbol_word_sent(&text);
             show_text(&text);
+        break;
+        case 5:
+            printf("spravka haha\n");
         break;
         default:
             printf("Error: unknown option\n");
@@ -47,4 +51,7 @@ int main() {
 
 //4
 //Hyi. tri sim snt. Русский текст епта бля
+//
+//2
+//hello, my best , cw. test
 
