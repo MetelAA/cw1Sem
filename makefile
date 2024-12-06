@@ -14,4 +14,3 @@ text.o: text.c text.h
 
 show_text.o: show_text.c show_text.h text.h
 	gcc -c show_text.c
-
