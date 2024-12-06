@@ -3,14 +3,16 @@
 int is_end_word(wchar_t wchar);
 int sentence_comparator(struct sentence *sent1, struct sentence *sent2);
 
-
-
+// переворачиваем предложения
 void reverse_sentence(struct text *text) {
+    //итерируемся по словам в опбратном порядке. Т.е. идём от конца, когда слово кончается переносим его в начало новго предложения. Потом идём до новго предложения и
+    //когда доходим до него, символы проблеов и тд с начала первого слова и заканчивающиеся с концом новго слова переносим в конец первого слова.
+    // Отедльно обрабатываем самое начало предложения которое становится концом (j==0) тк там нету конца слова как такового
     for(int i = 0; i < text->num_sent; i++){
         struct sentence *sent = &text->sents[i];
         wchar_t *new_words = malloc(sizeof(wchar_t) * (wcslen(sent->words)+1));
         new_words[wcslen(sent->words)] = L'\0';
-        new_words[wcslen(sent->words) - 1] = L'.';
+        new_words[wcslen(sent->words) - 1] = L'.'; //два крайних смивола которые встречаются в любом случае
         int new_words_p = 0;
         int ind_word_start = 0;
         for(int j = (int) wcslen(sent->words)-2; j >= 0; j--){
@@ -42,6 +44,7 @@ void reverse_sentence(struct text *text) {
     }
 }
 
+// сортируем по длине первого слова. Сначала определяем длину соотвествующего слова, потом сортируем кусортом использую кастомный компоратор
 void sort_by_first_word(struct text *text){
     for(int i = 0; i < text->num_sent; i++){
         struct sentence *sent = &text->sents[i];
@@ -53,6 +56,7 @@ void sort_by_first_word(struct text *text){
     qsort(text->sents, text->num_sent, sizeof(struct sentence), (int (*)(const void *, const void *)) sentence_comparator);
 }
 
+//удаляем все превдложения со словами менее 4 симв
 void delete_less_then_four_symbol_word_sent(struct text *text){
     for(int i = 0; i < text->num_sent; i++){
         struct sentence *sent = &text->sents[i];
@@ -76,6 +80,7 @@ void delete_less_then_four_symbol_word_sent(struct text *text){
     }
 }
 
+// получаем данные для первого состояния
 void get_metadata(struct text *text){
     for(int i = 0; i < text->num_sent; i++){
         int max_word_len = 0;

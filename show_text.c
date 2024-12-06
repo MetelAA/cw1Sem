@@ -1,20 +1,18 @@
 #include "show_text.h"
 
 
-
 void show_text(struct text *text){
-    //printf("sents num - %d\n", text->num_sent);
     for(int i = 0; i < text->num_sent; i++){
-       // printf("sentLen - %d\n", wcslen(text->sents[i].words));
         wprintf(L"%ls\n", text->sents[i].words);
     }
 }
 
 void show_metadata(struct text *text){
     for(int i = 0; i < text->num_sent; i++){
-//        wprintf(L"%ls", text->sents[i].words);
-//        printf("|| sentLen - %d\n", wcslen(text->sents[i].words));
-//        wprintf(L"Kolichestvo slov - %d, Max len slova - %d, Kol-vo simb - %d\n", text->sents[i].words_sum, text->sents[i].max_word_len, text->sents[i].simb_sum);
         wprintf(L"%d-%d-%d\n", text->sents[i].words_sum, text->sents[i].max_word_len, text->sents[i].simb_sum+1900);
     }
+}
+
+void show_help(){
+    wprintf(L"1) Для каждого предложения вывести строку-дату вида “ДД-ММ-ГГГГ”, где день - количество слов в предложении, месяц - наибольшая длина слова в предложении, год - общее количество символов в предложении + 1900.\n2) Вывести предложения так, чтобы слова шли в обратном порядке. Разделители между словами также должны идти в обратном порядке. Пример: предложение “hello, my best , cw.” должно стать “cw , best my, hello.”\n3) Отсортировать предложения по длине первого слова в предложении. Пример: “Одно слово. Два слова. Четыре слова.” -> “Два слова. Одно слово. Четыре слова”\n4) Удалить все предложения у которых все слова имеют длину не больше 3 символов.\n5) Показать справку\n");
 }

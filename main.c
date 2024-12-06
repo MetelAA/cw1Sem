@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
 
 int main() {
-    setlocale(LC_CTYPE, "ru");
-    printf("Course work for option 5.8, created by Artem Metelskii.\n");
+    setlocale(LC_ALL, "");
+    wprintf(L"Course work for option 5.8, created by Artem Metelskii.\n");
     int n = 0;
-    scanf("%d", &n);
+    wscanf(L"%d", &n);
     struct text text;
     switch(n){
         case 0:
@@ -34,10 +33,10 @@ int main() {
             show_text(&text);
         break;
         case 5:
-            printf("spravka haha\n");
+            show_help();
         break;
         default:
-            printf("Error: unknown option\n");
+            wprintf(L"Error: unknown option\n");
         break;
     }
     return 0;
@@ -45,18 +44,15 @@ int main() {
 //4
 //Lorem ipsum. RepEaTs SEnT. dolor sit amet, consectetur.
 //adipiscing elit. tri sim snt.
-//Предложение на русском. Repeats Sent. gggggggggggggggg hiplet.
+//Repeats Sent. gggggggggggggggg chiplet.
 //end sent
 
-//0
+//1
 //Lorem ipsum. RepEaTs SEnT. dolor sit amet, consectetur.
 //adipiscing elit.
 //Предложение на русском. Repeats Sent.
 //end sent
 
-//4
-//Hyi. tri sim snt. Русский текст епта бля
 //
-//2
-//hello, my best , cw. test
-
+//0
+//test1. test2. test3. lomk

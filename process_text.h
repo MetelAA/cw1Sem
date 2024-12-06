@@ -1,9 +1,9 @@
 #ifndef process_text_hF
 #define process_text_hF
+
 #include "text.h"
 #include <stdlib.h>
 #include <wchar.h>
-#include <stdio.h>
 
 #define MAX_AB(A, B) ((A) > (B) ? (A) : (B))
 

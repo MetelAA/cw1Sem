@@ -3,7 +3,7 @@
 
 #include <wchar.h>
 #include <stdlib.h>
-#include <stdio.h>
+#include <wctype.h>
 
 struct sentence {
     wchar_t *words;
