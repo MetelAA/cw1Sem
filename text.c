@@ -1,8 +1,5 @@
 #include "text.h"
 
-#define STANDARD_TEXT_LEN 3
-#define STANDARD_SENT_LEN 100
-
 struct text init_text();
 
 int add_sent_size(struct sentence *sent, int sent_max_size);
@@ -150,4 +147,12 @@ void delete_sent(struct text *text, int sent_number) {
         text->sents[i].words = text->sents[i + 1].words;
     }
     text->num_sent--;
+}
+
+void free_mem(struct text *text){
+    for(int i = 0; i < text->num_sent; i++){
+        struct sentence *sent = &text->sents[i];
+        free(sent->words);
+    }
+    free(text->sents);
 }

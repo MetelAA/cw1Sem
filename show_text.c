@@ -1,6 +1,5 @@
 #include "show_text.h"
 
-
 void show_text(struct text *text){
     for(int i = 0; i < text->num_sent; i++){
         wprintf(L"%ls\n", text->sents[i].words);

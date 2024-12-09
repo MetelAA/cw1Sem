@@ -20,6 +20,10 @@ D:/ClionProj/cw1Sem/show_text.h
 process_text.h
 D:/ClionProj/cw1Sem/process_text.h
 
+D:/ClionProj/cw1Sem/process_text.c
+process_text.h
+D:/ClionProj/cw1Sem/process_text.h
+
 D:/ClionProj/cw1Sem/process_text.h
 text.h
 D:/ClionProj/cw1Sem/text.h
@@ -28,11 +32,19 @@ stdlib.h
 wchar.h
 -
 
+D:/ClionProj/cw1Sem/show_text.c
+show_text.h
+D:/ClionProj/cw1Sem/show_text.h
+
 D:/ClionProj/cw1Sem/show_text.h
 text.h
 D:/ClionProj/cw1Sem/text.h
 wchar.h
 -
+
+D:/ClionProj/cw1Sem/text.c
+text.h
+D:/ClionProj/cw1Sem/text.h
 
 D:/ClionProj/cw1Sem/text.h
 wchar.h
